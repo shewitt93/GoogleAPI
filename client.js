@@ -1,34 +1,19 @@
-const url = "http://localhost:3000";
-const myForm = document.querySelector("#my-form");
-//selects the ID my-form in the html document via query selector
-let input;
+// Select the google search button
+const googleSearch = document.getElementById("googleSearch");
 
-myForm.addEventListener("submit", search);
-//listens to myform for a submit request and then uses the function return reverse
+// Select the im feeling lucky button
+const imFeelingLucky = document.getElementById("imFeelingLucky");
 
-function search (e) {
-  e.preventDefault();
+// Add event listener to google search button
+googleSearch.addEventListener("click", googleSearchFunc);
 
-//stops form getting refreshed on submit before the data can be added
+// Add event listener to im feeling lucky button
+imFeelingLucky.addEventListener("click", imFeelingLuckyFunc);
 
-  const searchg = e.target;
-  input = form.message.value;
-
-  //create variable for the event target then the id message in the form and gets the value
-
-  const options = {
-    method: 'POST',
-    body: JSON.stringify(input)
-  };
-
-  //method relates to the server response, in this case to post the data collected from form to server. body:Json.stringify converts to a json string that is readable by the server
-
-  fetch('http://localhost:3000/search', options) //makes network request to branch /reverse
-    .then(response => response.json()) //similar to res.send but respects json.stringify changes
-    .then(addSearch) // then applies the function addInput 
-    .catch(console.warn); // console logs warnings
+function googleSearchFunc() {
+    console.log("You clicked the google search button!");
 };
 
-function addSearch(searched) {
-  myForm.textContent()}; 
-
+function imFeelingLuckyFunc() {
+    console.log("You clicked the im feeling lucky button!");
+};
