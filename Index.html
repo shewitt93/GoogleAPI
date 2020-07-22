@@ -5,6 +5,7 @@
         <script defer src="client.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
 
     <body>
@@ -17,8 +18,20 @@
             </div>
             <span id="search bar">
                 <a class="nes-btn" id="googleSearch" href="#">Google Search</a>
-                <a class="nes-btn" id="imFeelingLucky" href="#">I'm feeling Lucky!</a>
+                <form id= "my-btn" action="">
+                    <input type="submit" id= "imFeelingLucky" class="nes-btn" value="I'm Feeling Lucky!"></input>
+                </form>
             </span>
+        </section>
+
+        <section id="content">
+            <h4 id='title'>
+
+            </h4>
+            <img id="image" src="">
+            <p id='description'>
+
+            </p>
         </section>
     </body>
 </html>
