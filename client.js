@@ -11,7 +11,7 @@ function search (e) {
 
 //stops form getting refreshed on submit before the data can be added
 
-  const searchg = e.target;
+  
   input = form.message.value;
 
   //create variable for the event target then the id message in the form and gets the value
@@ -30,5 +30,7 @@ function search (e) {
 };
 
 function addSearch(searched) {
-  myForm.textContent()}; 
+  searched.map(e=>e )
+  // document.querySelector()
+}; 
 

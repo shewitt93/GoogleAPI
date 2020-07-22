@@ -4,8 +4,11 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+#text {
+  margin-bottom: 100px;
+} 
 #searchbar{
+  margin-bottom: 20px;
   margin-top: 20px;
 }
 section {
